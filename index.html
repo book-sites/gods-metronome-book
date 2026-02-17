@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>God's Metronome — The 12,000-Year Catastrophe Cycle</title>
+	<meta name="description" content="An ancient temple was buried to hide a warning. We just decoded it. Part detective story, part ancient mystery, part urgent warning.">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-74CBT2M7HV"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-74CBT2M7HV');
+	</script>
+
+	<style>
+		:root {
+			--gold: #c9a84c;
+			--gold-light: #e4cc7a;
+			--bg-dark: #0a0a0f;
+			--bg-section: #111118;
+		}
+
+		body {
+			background-color: var(--bg-dark);
+			color: #d4d4d8;
+			font-family: 'Inter', sans-serif;
+			font-weight: 300;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		h1, h2, h3 {
+			font-family: 'Cinzel', serif;
+			color: #f0ece2;
+		}
+
+		.hero {
+			min-height: 100vh;
+			background: radial-gradient(ellipse at 50% 30%, rgba(60, 40, 10, 0.3) 0%, var(--bg-dark) 70%);
+			display: flex;
+			align-items: center;
+		}
+
+		.book-cover {
+			max-width: 320px;
+			width: 100%;
+			border-radius: 4px;
+			box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7), 0 0 40px rgba(201, 168, 76, 0.08);
+		}
+
+		.tagline {
+			font-family: 'Cinzel', serif;
+			font-size: 1.1rem;
+			color: var(--gold);
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+		}
+
+		.hero-title {
+			font-size: 2.8rem;
+			font-weight: 700;
+			line-height: 1.15;
+			margin-bottom: 0.5rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.15rem;
+			color: #9a9aab;
+			font-style: italic;
+			margin-bottom: 1.5rem;
+		}
+
+		.lead-text {
+			font-size: 1.1rem;
+			line-height: 1.8;
+			color: #b0b0bf;
+		}
+
+		.btn-buy {
+			background: linear-gradient(135deg, var(--gold), #b8942e);
+			color: #0a0a0f;
+			font-family: 'Cinzel', serif;
+			font-weight: 700;
+			font-size: 1.15rem;
+			letter-spacing: 0.06em;
+			padding: 16px 48px;
+			border: none;
+			border-radius: 4px;
+			text-decoration: none;
+			display: inline-block;
+			transition: all 0.25s ease;
+			box-shadow: 0 4px 20px rgba(201, 168, 76, 0.25);
+		}
+
+		.btn-buy:hover {
+			background: linear-gradient(135deg, var(--gold-light), var(--gold));
+			color: #0a0a0f;
+			transform: translateY(-2px);
+			box-shadow: 0 6px 30px rgba(201, 168, 76, 0.35);
+		}
+
+		.quotes-section {
+			background-color: var(--bg-section);
+			border-top: 1px solid rgba(201, 168, 76, 0.1);
+			border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+		}
+
+		.quote-text {
+			font-size: 1.2rem;
+			font-style: italic;
+			line-height: 1.8;
+			color: #c8c8d4;
+		}
+
+		.separator {
+			color: var(--gold);
+			letter-spacing: 0.5em;
+			opacity: 0.4;
+		}
+
+		.bottom-cta {
+			background: radial-gradient(ellipse at 50% 70%, rgba(60, 40, 10, 0.25) 0%, var(--bg-dark) 70%);
+		}
+
+		.footer-text {
+			color: #555;
+			font-size: 0.85rem;
+		}
+
+		@media (max-width: 767px) {
+			.hero-title { font-size: 2rem; }
+			.book-cover { max-width: 240px; margin-bottom: 2rem; }
+			.btn-buy { padding: 14px 36px; font-size: 1rem; }
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Hero -->
+	<section class="hero">
+		<div class="container">
+			<div class="row align-items-center justify-content-center gy-5">
+				<div class="col-md-5 col-lg-4 text-center">
+					<img src="cover.jpg" alt="God's Metronome book cover" class="book-cover">
+				</div>
+				<div class="col-md-7 col-lg-6">
+					<p class="tagline mb-3">What if the ancient world left us a warning?</p>
+					<h1 class="hero-title">God's Metronome</h1>
+					<p class="hero-subtitle">The 12,000-Year Catastrophe Cycle and the Question Nobody Wants to Ask</p>
+					<p class="lead-text mb-4">Twelve thousand years ago, something shattered the Earth. In the aftermath, someone built a temple in the mountains of Turkey, encoded the date of the catastrophe in stone, and deliberately buried it &mdash; as though hiding a message for a future they would never see.</p>
+					<p class="lead-text mb-4">That message has now been found.</p>
+					<a href="#" id="buy-link" class="btn-buy" onclick="trackConversion()">Buy It Now</a>
+					<p class="mt-3" style="color: #666; font-size: 0.9rem;">Available in paperback and Kindle</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Pull quotes -->
+	<section class="quotes-section py-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<p class="quote-text mb-4">"From buried temples to NASA laboratories, a breathtaking investigation spanning ice core labs, Vedic temples, Antarctic research stations, and Hermetic cathedrals."</p>
+					<p class="separator mb-4">&bull; &bull; &bull;</p>
+					<p class="quote-text mb-4">The same number &mdash; 432 &mdash; appearing in Hindu scripture, Norse mythology, and Babylonian king lists. The same story of fire and flood told independently on six continents. The same cycle of destruction, ticking like a cosmic heartbeat.</p>
+					<p class="separator mb-4">&bull; &bull; &bull;</p>
+					<p class="quote-text">Part detective story. Part ancient mystery. Part urgent warning.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Bottom CTA -->
+	<section class="bottom-cta py-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6 text-center py-5">
+					<h2 class="mb-3" style="font-size: 1.6rem;">The clock does not care whether we are ready.</h2>
+					<p class="lead-text mb-4">It just ticks.</p>
+					<a href="#" class="btn-buy" onclick="trackConversion()">Buy It Now</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="py-4 text-center">
+		<p class="footer-text mb-0">&copy; 2026 C. Winters. All rights reserved.</p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		// Replace # with your Books2Read link
+		var bookLink = '#';
+		document.querySelectorAll('.btn-buy').forEach(function(btn) {
+			btn.href = bookLink;
+		});
+
+		// Track buy button clicks as a GA4 event — this will appear in Analytics and can be imported into Google Ads as a conversion
+		function trackConversion() {
+			if (typeof gtag !== 'undefined') {
+				gtag('event', 'buy_click', { 'event_category': 'purchase', 'event_label': 'buy_now_button' });
+			}
+		}
+	</script>
+
+</body>
+</html>
