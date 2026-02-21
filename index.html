@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>God's Metronome — The 12,000-Year Catastrophe Cycle</title>
+	<title>God's Metronome - The 12,000-Year Catastrophe Cycle</title>
 	<meta name="description" content="An ancient temple was buried to hide a warning. We just decoded it. Part detective story, part ancient mystery, part urgent warning.">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -104,23 +104,106 @@
 			box-shadow: 0 6px 30px rgba(201, 168, 76, 0.35);
 		}
 
-		.quotes-section {
+		.btn-sample {
+			color: var(--gold);
+			font-family: 'Cinzel', serif;
+			font-weight: 500;
+			font-size: 1rem;
+			letter-spacing: 0.04em;
+			padding: 14px 36px;
+			border: 1px solid rgba(201, 168, 76, 0.4);
+			border-radius: 4px;
+			text-decoration: none;
+			display: inline-block;
+			transition: all 0.25s ease;
+			background: transparent;
+		}
+
+		.btn-sample:hover {
+			color: var(--gold-light);
+			border-color: var(--gold);
+			background: rgba(201, 168, 76, 0.06);
+			transform: translateY(-2px);
+		}
+
+		.price-line {
+			color: #888;
+			font-size: 0.95rem;
+			letter-spacing: 0.02em;
+		}
+
+		.price-line strong {
+			color: #b0b0bf;
+			font-weight: 500;
+		}
+
+		.topics-section {
 			background-color: var(--bg-section);
 			border-top: 1px solid rgba(201, 168, 76, 0.1);
 			border-bottom: 1px solid rgba(201, 168, 76, 0.1);
 		}
 
+		.section-heading {
+			font-size: 1.5rem;
+			font-weight: 500;
+			letter-spacing: 0.06em;
+		}
+
+		.topic-card {
+			padding: 1.5rem;
+			border: 1px solid rgba(201, 168, 76, 0.08);
+			border-radius: 6px;
+			background: rgba(255, 255, 255, 0.015);
+			transition: border-color 0.25s ease;
+			height: 100%;
+		}
+
+		.topic-card:hover {
+			border-color: rgba(201, 168, 76, 0.2);
+		}
+
+		.topic-card h3 {
+			font-size: 1rem;
+			font-weight: 700;
+			color: var(--gold);
+			margin-bottom: 0.5rem;
+			letter-spacing: 0.02em;
+		}
+
+		.topic-card p {
+			font-size: 0.95rem;
+			color: #9a9aab;
+			margin-bottom: 0;
+			line-height: 1.6;
+		}
+
+		.quotes-section {
+			border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+		}
+
 		.quote-text {
-			font-size: 1.2rem;
+			font-size: 1.15rem;
 			font-style: italic;
 			line-height: 1.8;
 			color: #c8c8d4;
+		}
+
+		.quote-source {
+			font-size: 0.85rem;
+			color: #666;
+			font-style: normal;
 		}
 
 		.separator {
 			color: var(--gold);
 			letter-spacing: 0.5em;
 			opacity: 0.4;
+		}
+
+		.about-section {
+			background-color: var(--bg-section);
+			border-top: 1px solid rgba(201, 168, 76, 0.1);
+			border-bottom: 1px solid rgba(201, 168, 76, 0.1);
 		}
 
 		.bottom-cta {
@@ -136,6 +219,7 @@
 			.hero-title { font-size: 2rem; }
 			.book-cover { max-width: 240px; margin-top: 2rem; margin-bottom: 1rem; }
 			.btn-buy { padding: 14px 36px; font-size: 1rem; }
+			.btn-sample { padding: 12px 28px; font-size: 0.9rem; }
 		}
 	</style>
 </head>
@@ -152,25 +236,103 @@
 					<p class="tagline mb-3">What if the ancient world left us a warning?</p>
 					<h1 class="hero-title">God's Metronome</h1>
 					<p class="hero-subtitle">The 12,000-Year Catastrophe Cycle and the Question Nobody Wants to Ask</p>
-					<p class="lead-text mb-4">Twelve thousand years ago, something shattered the Earth. In the aftermath, someone built a temple in the mountains of Turkey, encoded the date of the catastrophe in stone, and deliberately buried it &mdash; as though hiding a message for a future they would never see.</p>
+					<p class="lead-text mb-4">Twelve thousand years ago, something shattered the Earth. In the aftermath, someone built a temple in the mountains of Turkey, encoded the date of the catastrophe in stone, and deliberately buried it, as though hiding a message for a future they would never see.</p>
 					<p class="lead-text mb-4">That message has now been found.</p>
-					<a href="#" id="buy-link" class="btn-buy" onclick="trackConversion()">Buy It Now</a>
-					<p class="mt-3" style="color: #666; font-size: 0.9rem;">Available in paperback and Kindle</p>
+					<div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start align-items-center mb-3">
+						<a href="#" class="btn-buy" onclick="trackConversion()">Buy Now</a>
+						<a href="#" class="btn-sample" onclick="trackSample()">Read a Free Sample</a>
+					</div>
+					<p class="price-line">Kindle <strong>$2.99</strong> &middot; Paperback <strong>$9.99</strong></p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Pull quotes -->
+	<!-- What's Inside -->
+	<section class="topics-section py-5">
+		<div class="container">
+			<div class="row justify-content-center mb-4">
+				<div class="col-lg-8 text-center">
+					<h2 class="section-heading mb-2">What's Inside</h2>
+					<p class="lead-text">An investigation spanning geology, archaeology, astronomy, and ancient mythology</p>
+				</div>
+			</div>
+			<div class="row g-3 justify-content-center">
+				<div class="col-md-6 col-lg-3">
+					<div class="topic-card">
+						<h3>Pole Shifts & Magnetic Reversals</h3>
+						<p>Earth's magnetic field is weakening. The South Atlantic Anomaly is growing. The evidence is in the ice cores.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="topic-card">
+						<h3>The Younger Dryas Impact</h3>
+						<p>12,900 years ago, something devastated the Earth and ended an ice age. What does the peer-reviewed evidence say?</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="topic-card">
+						<h3>Gobekli Tepe & Pillar 43</h3>
+						<p>A temple deliberately buried 12,000 years ago in the mountains of Turkey. What was it recording in stone?</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="topic-card">
+						<h3>Miyake Events & Solar Science</h3>
+						<p>Radiocarbon spikes preserved in ancient tree rings reveal extreme solar events in Earth's past.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="topic-card">
+						<h3>The Number 432</h3>
+						<p>The same sacred number encoded independently in Hindu scripture, Norse mythology, and Babylonian king lists.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="topic-card">
+						<h3>The Taurid Meteor Complex</h3>
+						<p>A debris stream Earth passes through twice a year, and what Comet Encke's trail might deliver.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="topic-card">
+						<h3>Precession & the Great Year</h3>
+						<p>Earth's 26,000-year wobble and the cosmic clock that ancient cultures appear to have tracked.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="topic-card">
+						<h3>The Catastrophe Cycle</h3>
+						<p>A recurring pattern found across geological records, ancient mythology, and archaeological sites worldwide.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Excerpts -->
 	<section class="quotes-section py-5">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
-					<p class="quote-text mb-4">"From buried temples to NASA laboratories, a breathtaking investigation spanning ice core labs, Vedic temples, Antarctic research stations, and Hermetic cathedrals."</p>
+					<p class="quote-text mb-2">&ldquo;From buried temples to NASA laboratories, a breathtaking investigation spanning ice core labs, Vedic temples, Antarctic research stations, and Hermetic cathedrals.&rdquo;</p>
+					<p class="quote-source mb-4">from the book</p>
 					<p class="separator mb-4">&bull; &bull; &bull;</p>
-					<p class="quote-text mb-4">The same number &mdash; 432 &mdash; appearing in Hindu scripture, Norse mythology, and Babylonian king lists. The same story of fire and flood told independently on six continents. The same cycle of destruction, ticking like a cosmic heartbeat.</p>
+					<p class="quote-text mb-4">The same number, 432, appearing in Hindu scripture, Norse mythology, and Babylonian king lists. The same story of fire and flood told independently on six continents. The same cycle of destruction, ticking like a cosmic heartbeat.</p>
 					<p class="separator mb-4">&bull; &bull; &bull;</p>
-					<p class="quote-text">Part detective story. Part ancient mystery. Part urgent warning.</p>
+					<p class="quote-text">Part detective story. Part ancient mystery. Part scientific investigation.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About -->
+	<section class="about-section py-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6 text-center">
+					<h2 class="section-heading mb-3">About the Author</h2>
+					<p class="lead-text">C. Winters spent years tracing a pattern across ice core data, ancient temples, and peer-reviewed research. God's Metronome is the result of that investigation.</p>
 				</div>
 			</div>
 		</div>
@@ -181,9 +343,13 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center py-5">
-					<h2 class="mb-3" style="font-size: 1.6rem;">The clock does not care whether we are ready.</h2>
-					<p class="lead-text mb-4">It just ticks.</p>
-					<a href="#" class="btn-buy" onclick="trackConversion()">Buy It Now</a>
+					<h2 class="mb-3" style="font-size: 1.6rem;">Every culture on Earth told the same story.</h2>
+					<p class="lead-text mb-4">God's Metronome asks why.</p>
+					<div class="d-flex flex-wrap gap-3 justify-content-center align-items-center mb-3">
+						<a href="#" class="btn-buy" onclick="trackConversion()">Buy Now</a>
+						<a href="#" class="btn-sample" onclick="trackSample()">Read a Free Sample</a>
+					</div>
+					<p class="price-line">Kindle <strong>$2.99</strong> &middot; Paperback <strong>$9.99</strong></p>
 				</div>
 			</div>
 		</div>
@@ -196,16 +362,20 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script>
-		// Replace # with your Books2Read link
 		var bookLink = 'https://mybook.to/gods-metronome';
-		document.querySelectorAll('.btn-buy').forEach(function(btn) {
+		document.querySelectorAll('.btn-buy, .btn-sample').forEach(function(btn) {
 			btn.href = bookLink;
 		});
 
-		// Track buy button clicks as a GA4 event — this will appear in Analytics and can be imported into Google Ads as a conversion
 		function trackConversion() {
 			if (typeof gtag !== 'undefined') {
 				gtag('event', 'buy_click', { 'event_category': 'purchase', 'event_label': 'buy_now_button' });
+			}
+		}
+
+		function trackSample() {
+			if (typeof gtag !== 'undefined') {
+				gtag('event', 'sample_click', { 'event_category': 'engagement', 'event_label': 'read_sample_button' });
 			}
 		}
 	</script>
